@@ -1,0 +1,123 @@
+@font-face{
+    font-family: bebas;
+    src: url('../font/BebasNeue-Regular.ttf');
+}
+html{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+nav a{
+    color: #fff !important;
+}
+.header{
+    background: #e88c31 !important;
+}
+li.nav-item:last-child {
+    margin-right: 30px;
+}
+.logo{
+    margin-left: 30px;
+}
+/* banner */
+.jumbotron{
+    position: relative;
+    background-image: url('../image//banner.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80vh;
+}
+.jumbotron h1{
+    color: #e88c31;
+    font-size: 40px;
+    font-weight: 400;
+}
+p.lead{
+    width: 550px;
+}
+.content-banner{
+    position: absolute;
+    top: 25%;
+}
+
+a.btn.btn-primary.btn-lg {
+    background-color: #e88c31;
+    border: none;
+}
+/* about me */
+.about-me{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+section h2{
+    margin-top: 50px;
+    text-align: center;
+    color: #e88c31;
+    margin-bottom: 100px;
+}
+.about-me img{
+    margin-left: 90px;
+    border-radius: 55%;
+    width: 60%;
+}
+.avatar{
+    border-right: 5px solid #19d2e3;
+}
+.text-about-me h5{
+    color: #19d2e3;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.text-about-me p{
+    width: 85%;
+    color: #9ca0a1;
+    font-size: 15px;
+}
+/* portfolio */
+.portfolio img{
+    width: 100%;
+    margin-top: 10px;
+}
+.portfolio a:hover{
+    opacity:0.5;
+}
+/* blog */
+.card {
+    width: 100% !important;
+}
+/* team */
+.team .item{
+    position: relative;
+   }
+   .team .des{
+    background: #F97300;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 93%;
+    transition:.3s ease-in-out;
+    
+   }
+
+   .contact-form{
+    margin: 6em 0;
+    position: relative;  
+   }
+   
+   .contact-form h1{
+    padding:2em 1px;
+    color: #F97300; 
+   }
+   .contact-form .right{
+    max-width: 600px;
+   }
+   .contact-form .right .btn-secondary{
+    background:  #F97300;
+    color: #fff;
+    border:0;
+   }
+   .contact-form .right .form-control::placeholder{
+    color: #888;
+    font-size: 16px;
+   }
