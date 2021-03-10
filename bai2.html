@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="en">
 <style>
+    body {
+        background-color: rgb(242, 242, 242) !important;
+    }
+
     .card-body {
         padding: 0 !important;
     }
@@ -11,6 +15,15 @@
 
     .container-fluid {
         margin-top: 1%;
+    }
+
+    .card-body input {
+        height: 25px !important;
+    }
+
+    button.btn.btn-outline-secondary.dropdown-toggle {
+        height: 25px !important;
+        margin-bottom: 5px;
     }
 </style>
 
@@ -30,234 +43,259 @@
     </header>
     <div class="container-fluid" style=" left: 0; top: 0;  position: absolute; width: 99%;">
         <div class="card">
-            <h5 class="card-title">XXX</h5>
-            <div class="card-body" style="background-color: #acb3b3;">
-                <form action="">
-                    <div class="form-group">
-                        <div class="row" style="height: 50px;">
-                            <!-- row 1 -->
-                            <div class="col" style="margin-top: 1%; width: 100%;">
-                                &emsp;XXXX<input type="date" style="width: 37%; margin-left: 7%;">~<input type="date"
-                                    style="width: 36%;">
-                            </div>
-                            <!-- row 2 -->
-                            <div class="col" style="margin-top: 1%;">
-                                <div class="input-group mb-3">
-                                    <p style=" margin-right: 2%; margin-left: 2%;">XXXX </p>
-                                    <input type="text" class="btn btn-outline-secondary"
-                                        style="width: 10%; border: 4px black solid; height: 30px;"></input>
-                                    <div class="dropdown">
-                                        <button type="button" class="btn btn-outline-secondary dropdown-toggle"
-                                            data-toggle="dropdown" style='height:30px'>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Link 1</a>
-                                            <a class="dropdown-item" href="#">Link 2</a>
-                                            <a class="dropdown-item" href="#">Link 3</a>
-                                        </div>
-                                    </div>
-                                    <input type="text" aria-label="Text input with segmented dropdown button"
-                                        style="width: 20%;height: 30px;" disabled>
-                                    <p style=" margin-right: 2%; margin-left: 2%;">XXXX </p>
-                                    <input type="text" class="btn btn-outline-secondary"
-                                        style="width: 10%; border: 4px black solid; height: 30px;"></input>
-                                    <div class="dropdown">
-                                        <button type="button" class="btn btn-outline-secondary dropdown-toggle"
-                                            data-toggle="dropdown" style='height:30px'>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Link 1</a>
-                                            <a class="dropdown-item" href="#">Link 2</a>
-                                            <a class="dropdown-item" href="#">Link 3</a>
-                                        </div>
-                                    </div>
-                                    <input type="text" aria-label="Text input with segmented dropdown button"
-                                        style="width: 11%;height: 30px;" disabled>
+            <div class="container-fluid">
+                <div class="card-header" style="background-color: #fff; padding: 0;">
+                    <h5 class="card-title">XXX</h5>
+                </div>
+                <div class="card-body" style="background-color: #f2f1f1;">
+                    <form action="">
+                        <div class="form-group">
+                            <div class="row" style="height: 50px;">
+                                <!-- row 1 -->
+                                <div class="col" style="margin-top: 1%; width: 100%;">
+                                    &emsp;XXXX<input type="date" style="width: 37%; margin-left: 7%;">~<input
+                                        type="date" style="width: 36%;">
                                 </div>
-                            </div>
-                            <!-- row 3 -->
-                            <div class="col" style="margin-top: 1%;">
-                                <div class="input-group mb-3">
-                                    <p style="margin-left: 15px;">XXXX</p>
-                                    <input type="text" class="btn btn-outline-secondary"
-                                        style=" margin-left: 7%; height: 30px;">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <!-- row 1 -->
-                            <div class="col" style="margin-top: 1px;">
-                                <div class="input-group mb-3">
-                                    <p style=" margin-right: 2%; margin-left: 4%;">XXXX </p>
-                                    <input type="text" class="btn btn-outline-secondary"
-                                        style="width: 15%; border: 4px black solid; height: 30px; margin-left: 5%;"></input>
-                                    <div class="dropdown">
-                                        <button type="button" class="btn btn-outline-secondary dropdown-toggle"
-                                            data-toggle="dropdown" style='height:30px'>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Link 1</a>
-                                            <a class="dropdown-item" href="#">Link 2</a>
-                                            <a class="dropdown-item" href="#">Link 3</a>
+                                <!-- row 2 -->
+                                <div class="col" style="margin-top: 1%;">
+                                    <div class="input-group mb-3">
+                                        <p style=" margin-right: 2%; margin-left: 2%;">XXXX </p>
+                                        <input type="text" class="btn btn-sm btn-outline-secondary"
+                                            style="width: 10%; border: 2px black solid; height: 30px;"></input>
+                                        <div class="dropdown">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                                                data-toggle="dropdown">
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Link 1</a>
+                                                <a class="dropdown-item" href="#">Link 2</a>
+                                                <a class="dropdown-item" href="#">Link 3</a>
+                                            </div>
                                         </div>
+                                        <input type="text" aria-label="Text input with segmented dropdown button"
+                                            style="width: 20%;height: 30px;" disabled>
+                                        <p style=" margin-right: 2%; margin-left: 2%;">XXXX </p>
+                                        <input type="text" class="btn btn-sm btn-outline-secondary"
+                                            style="width: 10%; border: 2px black solid; height: 30px;"></input>
+                                        <div class="dropdown">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                                                data-toggle="dropdown">
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Link 1</a>
+                                                <a class="dropdown-item" href="#">Link 2</a>
+                                                <a class="dropdown-item" href="#">Link 3</a>
+                                            </div>
+                                        </div>
+                                        <input type="text" aria-label="Text input with segmented dropdown button"
+                                            style="width: 11%;height: 30px;" disabled>
                                     </div>
-                                    <input type="text" aria-label="Text input with segmented dropdown button"
-                                        style="width: 50%;height: 30px;" disabled>
                                 </div>
-                            </div>
-                            <!-- col 2 -->
-                            <div class="col">
-                                <div class="input-group mb-3">
-                                    <p style=" margin-right: 2%; margin-left: 2%;">XXXX </p>
-                                    <input type="text" class="btn btn-outline-secondary"
-                                        style="width: 15%; border: 4px black solid; height: 30px;"></input>
-                                    <div class="dropdown">
-                                        <button type="button" class="btn btn-outline-secondary dropdown-toggle"
-                                            data-toggle="dropdown" style='height:30px'>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Link 1</a>
-                                            <a class="dropdown-item" href="#">Link 2</a>
-                                            <a class="dropdown-item" href="#">Link 3</a>
-                                        </div>
-                                    </div>
-                                    <input type="text" aria-label="Text input with segmented dropdown button"
-                                        style="width: 60%;height: 30px;" disabled>
-                                </div>
-                            </div>
-                            <!-- col 3 -->
-                            <div class="col">
-                                <div class="input-group mb-3">
-                                    <p style="margin-left: 15px;">XXXX</p>
-                                    <input type="text" class="btn btn-outline-secondary"
-                                        style=" margin-left: 7%; height: 30px;">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row" style="height: 40px;">
-                            <!-- row 1 -->
-                            <div class="col">
-                                <div class="input-group mb-3">
-                                    <p style=" margin-right: 2%; margin-left: 4%;">XXXX </p>
-                                    <input type="text" class="btn btn-outline-secondary"
-                                        style="width: 15%; border: 4px black solid; height: 30px; margin-left: 5%;"></input>
-                                    <div class="dropdown">
-                                        <button type="button" class="btn btn-outline-secondary dropdown-toggle"
-                                            data-toggle="dropdown" style='height:30px'>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Link 1</a>
-                                            <a class="dropdown-item" href="#">Link 2</a>
-                                            <a class="dropdown-item" href="#">Link 3</a>
-                                        </div>
-                                    </div>
-                                    <input type="text" aria-label="Text input with segmented dropdown button"
-                                        style="width: 50%;height: 30px;" disabled>
-                                </div>
-                            </div>
-                            <!-- col 2 -->
-                            <div class="col">
-                                <div class="input-group mb-3">
-                                    <p style=" margin-right: 2%; margin-left: 2%;">XXXX </p>
-                                    <input type="text" class="btn btn-outline-secondary"
-                                        style="width: 15%; border: 4px black solid; height: 30px;"></input>
-                                    <div class="dropdown">
-                                        <button type="button" class="btn btn-outline-secondary dropdown-toggle"
-                                            data-toggle="dropdown" style='height:30px'>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Link 1</a>
-                                            <a class="dropdown-item" href="#">Link 2</a>
-                                            <a class="dropdown-item" href="#">Link 3</a>
-                                        </div>
-                                    </div>
-                                    <input type="text" aria-label="Text input with segmented dropdown button"
-                                        style="width: 60%;height: 30px;" disabled>
-                                </div>
-                            </div>
-                            <!-- col 3 -->
-                            <div class="col">
-                                <div class="input-group mb-3">
-                                    <p style=" margin-right: 2%; margin-left: 4%;">XXXX </p>
-                                    <input type="text" class="btn btn-outline-secondary"
-                                        style="width: 10%; border: 4px black solid; height: 30px;margin-left: 5%;"></input>
-                                    <div class="dropdown">
-                                        <button type="button" class="btn btn-outline-secondary dropdown-toggle"
-                                            data-toggle="dropdown" style='height:30px'>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Link 1</a>
-                                            <a class="dropdown-item" href="#">Link 2</a>
-                                            <a class="dropdown-item" href="#">Link 3</a>
-                                        </div>
-                                    </div>
-                                    <input type="text" aria-label="Text input with segmented dropdown button"
-                                        style="width: 30%;height: 30px;" disabled>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row" style="height: 50px;">
-                            <!-- col 1 -->
-                            <div class="col">
-                                <div class="input-group mb-3">
-                                    <p style=" margin-right: 2%; margin-left: 4%;">XXXX </p>
-                                    <input type="text" class="btn btn-outline-secondary"
-                                        style="width: 15%; border: 4px black solid; height: 30px; margin-left: 5%;"></input>
-                                    <div class="dropdown">
-                                        <button type="button" class="btn btn-outline-secondary dropdown-toggle"
-                                            data-toggle="dropdown" style='height:30px'>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Link 1</a>
-                                            <a class="dropdown-item" href="#">Link 2</a>
-                                            <a class="dropdown-item" href="#">Link 3</a>
-                                        </div>
-                                    </div>
-                                    <input type="text" aria-label="Text input with segmented dropdown button"
-                                        style="width: 50%;height: 30px;" disabled>
-                                </div>
-                            </div>
-                            <!-- col 2 -->
-                            <div class="col">
-                                <div class="input-group mb-3">
-                                    <div class="col" style="padding-left: 8px;">
-                                        <div class="input-group mb-3">
-                                            <p>XXXX</p>
-                                            <input type="text" class="btn btn-outline-secondary"
-                                                style=" margin-left: 5%; height: 30px;width: 57%;">
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="input-group mb-3">
-                                            <p>XXXX</p>
-                                            <input type="text" class="btn btn-outline-secondary"
-                                                style=" margin-left: 7%; height: 30px;width: 57%;">
-                                        </div>
+                                <!-- row 3 -->
+                                <div class="col" style="margin-top: 1%;">
+                                    <div class="input-group mb-3">
+                                        <p style="margin-left: 15px;">XXXX</p>
+                                        <input type="text" class="btn btn-sm btn-outline-secondary"
+                                            style=" margin-left: 7%; height: 30px;">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="row">
+                                <!-- row 1 -->
+                                <div class="col" style="margin-top: 1px;">
+                                    <div class="input-group mb-3">
+                                        <p style=" margin-right: 2%; margin-left: 4%;">XXXX </p>
+                                        <input type="text" class="btn btn-sm btn-outline-secondary"
+                                            style="width: 15%; border: 2px black solid; height: 30px; margin-left: 5%;"></input>
+                                        <div class="dropdown">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                                                data-toggle="dropdown">
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Link 1</a>
+                                                <a class="dropdown-item" href="#">Link 2</a>
+                                                <a class="dropdown-item" href="#">Link 3</a>
+                                            </div>
+                                        </div>
+                                        <input type="text" aria-label="Text input with segmented dropdown button"
+                                            style="width: 50%;height: 30px;" disabled>
+                                    </div>
+                                </div>
+                                <!-- col 2 -->
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <p style=" margin-right: 2%; margin-left: 2%;">XXXX </p>
+                                        <input type="text" class="btn btn-sm btn-outline-secondary"
+                                            style="width: 15%; border: 2px black solid; height: 30px;"></input>
+                                        <div class="dropdown">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                                                data-toggle="dropdown">
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Link 1</a>
+                                                <a class="dropdown-item" href="#">Link 2</a>
+                                                <a class="dropdown-item" href="#">Link 3</a>
+                                            </div>
+                                        </div>
+                                        <input type="text" aria-label="Text input with segmented dropdown button"
+                                            style="width: 60%;height: 30px;" disabled>
+                                    </div>
+                                </div>
+                                <!-- col 3 -->
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <p style="margin-left: 15px;">XXXX</p>
+                                        <input type="text" class="btn btn-sm btn-outline-secondary"
+                                            style=" margin-left: 7%; height: 30px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="height: 40px;">
+                                <!-- row 1 -->
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <p style=" margin-right: 2%; margin-left: 4%;">XXXX </p>
+                                        <input type="text" class="btn btn-sm btn-outline-secondary"
+                                            style="width: 15%; border: 2px black solid; height: 30px; margin-left: 5%;"></input>
+                                        <div class="dropdown">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                                                data-toggle="dropdown">
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Link 1</a>
+                                                <a class="dropdown-item" href="#">Link 2</a>
+                                                <a class="dropdown-item" href="#">Link 3</a>
+                                            </div>
+                                        </div>
+                                        <input type="text" aria-label="Text input with segmented dropdown button"
+                                            style="width: 50%;height: 30px;" disabled>
+                                    </div>
+                                </div>
+                                <!-- col 2 -->
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <p style=" margin-right: 2%; margin-left: 2%;">XXXX </p>
+                                        <input type="text" class="btn btn-sm btn-outline-secondary"
+                                            style="width: 15%; border: 2px black solid; height: 30px;"></input>
+                                        <div class="dropdown">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                                                data-toggle="dropdown">
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Link 1</a>
+                                                <a class="dropdown-item" href="#">Link 2</a>
+                                                <a class="dropdown-item" href="#">Link 3</a>
+                                            </div>
+                                        </div>
+                                        <input type="text" aria-label="Text input with segmented dropdown button"
+                                            style="width: 60%;height: 30px;" disabled>
+                                    </div>
+                                </div>
+                                <!-- col 3 -->
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <p style=" margin-right: 2%; margin-left: 4%;">XXXX </p>
+                                        <input type="text" class="btn btn-sm btn-outline-secondary"
+                                            style="width: 10%; border: 2px black solid; height: 30px;margin-left: 5%;"></input>
+                                        <div class="dropdown">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                                                data-toggle="dropdown">
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Link 1</a>
+                                                <a class="dropdown-item" href="#">Link 2</a>
+                                                <a class="dropdown-item" href="#">Link 3</a>
+                                            </div>
+                                        </div>
+                                        <input type="text" aria-label="Text input with segmented dropdown button"
+                                            style="width: 30%;height: 30px;" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="height: 50px;">
+                                <!-- col 1 -->
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <p style=" margin-right: 2%; margin-left: 4%;">XXXX </p>
+                                        <input type="text" class="btn btn-sm btn-outline-secondary"
+                                            style="width: 15%; border: 2px black solid; height: 30px; margin-left: 5%;"></input>
+                                        <div class="dropdown">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                                                data-toggle="dropdown">
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Link 1</a>
+                                                <a class="dropdown-item" href="#">Link 2</a>
+                                                <a class="dropdown-item" href="#">Link 3</a>
+                                            </div>
+                                        </div>
+                                        <input type="text" aria-label="Text input with segmented dropdown button"
+                                            style="width: 50%;height: 30px;" disabled>
+                                    </div>
+                                </div>
+                                <!-- col 2 -->
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <div class="col" style="padding-left: 8px;">
+                                            <div class="input-group mb-3">
+                                                <p>XXXX</p>
+                                                <input type="text" class="btn btn-sm btn-outline-secondary"
+                                                    style=" margin-left: 5%; height: 30px;width: 57%;">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="input-group mb-3">
+                                                <p>XXXX</p>
+                                                <input type="text" class="btn btn-sm btn-outline-secondary"
+                                                    style=" margin-left: 7%; height: 30px;width: 57%;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
 
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="card" style="margin-top: 1%;">
-            <div class="card-body">
-                <div class="container-fluid">
+            <div class="container-fluid" style="margin-top: 5px">
+                <div class="card-header" style="background-color: #fff;padding-left: 5px;">
                     <label for="">XXXX</label>
-                    <input type="text" style="margin-left: 1%;width: 10%;">
+                    <input type="text" style="margin-left: 1%;width: 10%;" disabled>
                     <label for="" style="margin-left: 1%;">XXXX</label>
                     <select name="" id="">
                         <option value="">XXXX</option>
                         <option value="">XXXX</option>
                         <option value="">XXXX</option>
                     </select>
-                    <table class="table" style="margin-top: 1%;">
+
+                </div>
+                <div class="card-body">
+                    <table class="table">
                         <thead>
-                            <tr style="background-color: aqua;">
+                            <tr style="background-color: rgb(146, 223, 223)">
+                                <th>XXX</th>
+                                <th>XXX</th>
+                                <th>XXX</th>
+                                <th>XXX</th>
+                                <th>XXX</th>
+                                <th>XXX</th>
+                                <th>XXX</th>
+                                <th>XXX</th>
+                                <th>XXX</th>
+                                <th>XXX</th>
                                 <th>XXX</th>
                                 <th>XXX</th>
                                 <th>XXX</th>
@@ -278,6 +316,16 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td scope="row"></td>
@@ -288,9 +336,29 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td scope="row"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
